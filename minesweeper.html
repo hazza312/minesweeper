@@ -1,0 +1,35 @@
+<!doctype html>
+<html>  
+    <head>
+         <meta charset="UTF-8"> 
+        <title>Minesweeper</title>
+        <script src="game-logic.js"></script>
+        <script src="minesweeper-game.js"></script>
+    </head>
+    <body>
+
+    <template id="gameTemplate">
+        <link href="minesweeper-game.css" rel="stylesheet">
+        <div id="gameBox">
+            <div id="statsRow">
+                <div id="numMines"></div>
+                <button id="resetButton">🙂</button>
+                <div id="timer">0</div>
+            </div>
+            <div>
+                <table id="gameTable"></table>
+            </div>
+            <div>
+                <select id="levelSelect">
+                    <option value="debug" selected>Roulette</option>
+                    <option value="beginner" selected>Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="expert">Expert</option>
+                </select>
+            </div>
+        </div>
+    </template>
+
+    <minesweeper-game></minesweeper-game>
+    </body>
+</html>
